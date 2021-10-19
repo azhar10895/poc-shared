@@ -1,10 +1,12 @@
 
-import "./button.scss";
+import "./button.css";
 
 function Button(props) {
   return (
-    <div className="button">
-        <button onClick={props.handleClick}>{props.text}</button>
+    <div>
+      <button className="button" onClick={props.handleClick}>
+        {props.text}
+      </button>
     </div>
   );
 }
